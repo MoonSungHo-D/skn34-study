@@ -49,3 +49,12 @@ desktop.ini
 *_images
 
 *-win64
+
+*.xml
+
+*.npy
+*.model
+
+*.txt
+*.bin
+*.keras
