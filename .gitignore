@@ -63,4 +63,8 @@ desktop.ini
 
 *.faiss
 
+db/
+
+chroma_db/
+
 checkpoint.db
