@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_ON_WEB</title>
+
+    <script>
+        // head 태그 안에 script 작성
+        console.log('🌽🌽🌽');
+
+        function foo() {
+            console.log('foooooo');
+        }
+
+        foo();
+
+        // bar();  // bar is not defined
+
+        // Cannot read properties of null (reading 'innerHTML')
+        // console.log(document.querySelector('h1').innerHTML);
+
+    </script>
+
+</head>
+<body>
+    <h1>JS on web</h1>
+    <ol>
+        <li>
+            on이벤트 속성
+            <button type="button" onclick="alert('🐶🐶🐶');">강아지</button>
+        </li>
+        <li>
+            내부 Script 태그에 작성
+            <button type="button" onclick="foo(); foo(); foo();">foo</button>
+        </li>
+        <li>
+            외부 js파일에 작성한 버튼
+            <button type="button" onclick="test();">외부JS Test</button>
+        </li>
+    </ol>
+
+    <script src="js/01_js_on_web.js"></script>
+
+    <script>
+        // body 종료태그 전 실행
+        console.log('🥑🥑🥑');
+
+        function bar() {
+            console.log('baaaaaaaaarrr');
+        }
+
+        // 첫 번째 h1 태그의 내용을 출력
+        console.log(document.querySelector('h1').innerHTML);
+
+        test();
+    </script>
+</body>
+</html>
