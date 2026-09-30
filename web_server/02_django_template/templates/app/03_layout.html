@@ -1,0 +1,7 @@
+{# {% extends ... %} : 부모 템플릿을 상속받아 사용. 전체 페이지 틀을 물려받아 사용. #}
+{% extends '../layout/base.html' %}
+
+{# {% block content %} 내용 {% endblock %} : 부모 템플릿의 base.html 안에 content 영역에 들어갈 내용 #}
+{% block content %}
+    <p>Django Template Layout은 훌륭합니다.👍👍👍</p>
+{% endblock %}
