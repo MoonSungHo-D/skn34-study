@@ -34,3 +34,29 @@ def _03_layout(request):
 
 def _04_static_files(request):
     return render(request, 'app/04_static_files.html')
+
+def _05_urls(request):
+    return render(request, 'app/05_urls.html')
+
+def articles_detail(request, id):
+    # print(f'{id = }')
+    return render(request, 'app/05_urls.html')
+
+def articles_category(request, category, id):
+    # print(f'{category = }, {id = }')
+    return render(request, 'app/05_urls.html')
+
+def search(request):
+    # print(request.GET.urlencode())
+    # print(request.GET)
+    q = request.GET.getlist('q', [])
+    lang = request.GET.get('lang', '')
+    # print(f'{q = }, {lang = }')
+    return render(request, 'app/05_urls.html', {'q': q, 'lang': lang})
+
+def _06_bootstrap(request):
+    return render(request, 'app/06_bootstrap.html')
+
+def _06_my_bootstrap(request):
+    return render(request, 'app/06_my_bootstrap.html')
+

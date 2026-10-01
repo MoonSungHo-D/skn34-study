@@ -10,4 +10,10 @@ urlpatterns = [
     path('02_tags', views._02_tags, name='02_tags'),
     path('03_layout', views._03_layout, name='03_layout'),
     path('04_static_files', views._04_static_files, name='04_static_files'),
+    path('05_urls', views._05_urls, name='05_urls'),
+    path('articles_detail/<int:id>', views.articles_detail, name='articles_detail'),
+    path('articles_category/<str:category>/<int:id>', views.articles_category, name='articles_category'),
+    path('search', views.search, name='search'),
+    path('06_bootstrap', views._06_bootstrap, name='06_bootstrap'),
+    path('06_my_bootstrap', views._06_my_bootstrap, name='06_my_bootstrap'),
 ]
